@@ -16,10 +16,10 @@ function FacebookIcon() {
 
 function ShareButtons({ whatsappUrl, facebookUrl, onCopy, copied }) {
   return (
-    <section className="space-y-4 rounded-[2rem] bg-white p-5 shadow-soft sm:p-6">
+    <section className="space-y-4 rounded-[2rem] border border-slate-200 bg-white p-5">
       <div>
         <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">Share Actions</p>
-        <h2 className="mt-2 text-xl font-semibold text-slate-900">One-click sharing</h2>
+        <h3 className="mt-2 text-xl font-semibold text-slate-900">Send or copy instantly</h3>
       </div>
 
       <div className="grid gap-3 sm:grid-cols-3">
@@ -54,7 +54,7 @@ function ShareButtons({ whatsappUrl, facebookUrl, onCopy, copied }) {
 
       <div className="h-6">
         {copied ? (
-          <div className="inline-flex rounded-full bg-slate-900 px-3 py-1 text-xs font-medium text-white">
+          <div className="inline-flex rounded-full bg-slate-950 px-3 py-1 text-xs font-medium text-white">
             Copied!
           </div>
         ) : null}
